@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codechef Website</title>
+    <style>
+        body{
+            background-color: aliceblue;
+            overflow-x: hidden;
+            width: 100%;
+            margin: 0px;
+        }
+        img{
+            float: left;
+            display: block;
+            margin-left: 50px;
+        }
+        a{
+            float: right;
+            margin-top: 20px;
+            display: block;
+            margin-right: 10px;
+            margin-left: 10px;
+            font-size: larger;
+            text-decoration:none;
+            text-align: center;
+        }
+        #na{
+            margin-right: 60px;
+            border: 1px solid #5a89c2;
+        }
+        
+        .g1{
+            padding: 4px 12px 4px 16px;
+            color: #7d7d7d;
+            width: 30;
+        }
+        .g2{
+            padding: 4px 28px;
+            color:#5a89c2;
+        }
+        a.g1:hover{
+            background-color: #eceff6;
+        }
+        
+        a.g2:hover{
+            background-color: #dbe8f6;
+        }
+        a#na:hover{
+            background-color: #4b7abd;
+            color: #dce5f2;
+        }
+        .c1{
+            position: sticky;
+            top:0px;
+            left: 0px;
+            display: flow-root;
+            height: 70px;
+            width: 100%;
+            float: left;
+            box-shadow: 0px 0px 10px #e9f1fe;
+            background-color: white;
+        }
+        hr{
+            border-style:groove;
+            border-color: rebeccapurple;
+        }
+        .c3{
+            background-color: #e9f1fe;
+            padding: 155px 90px;
+            float: left;
+            display: flow-root;
+        }
+        .c2{
+            background-color: #e9f1fe;
+            padding: 90px 90px;
+            float: left;
+            display: flow-root;
+        }
+        .c2 h1{
+            font-size: 48px;
+            color: #2e3446;
+            font-family: "Outfit", sans-serif;
+            margin: 0px 0px 16px;
+        }
+        #p1{
+            font-size: 20px;
+            font-family: sans-serif;
+            color: #7e7a7a;
+            margin: 0px 0px 16px;
+        }
+        #p2{
+            color: #2e3d69;
+            font-size: 20px;
+            font-family: sans-serif;
+            margin: 0px 0px 16px;
+        }
+        #p3{
+            color: #2e3446;
+            float: left;
+            clear: left;
+        }
+        #p4{
+            float: left;
+        }
+        input[type=text]{
+            padding: 16px;
+            border:1px solid #ccc;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            float: left;
+        }
+        ::placeholder{
+            color: #b3bdd2;
+        }
+        #b1{
+            display: block;
+            padding: 16px;
+            background-color: #4079da;
+            color: white;
+            border:1px solid #ccc;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            float: left;
+        }
+        #b2b1{
+            border:1px solid #ccc;
+            background-color: white;
+            float: left;
+            margin-left: 40px;
+            margin-top: 13px;
+            padding: 9px 6px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            font-size: 12px;
+            text-align: center;
+            
+        }
+        .b2{
+            text-align: center;
+            font-size: 12px;
+            border:1px solid #ccc;
+            background-color: white;
+            float: left;
+            margin-top: 13px;
+            margin-left: 20px;
+            margin-right: 0px;
+            padding: 9px 6px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        #sp2{
+            float: right;
+            margin: 0px;
+        }
+        .sp3,.sp1{
+            float: left;
+            margin-left: 0px;
+            margin-right: 4px;
+        }
+        #i1:focus{
+            outline:#ccc;
+        }
+        .c4{
+            clear: left;
+            padding: 32px 64px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: white;
+            display: flow-root;
+        }
+        #new{
+            color: aqua;
+        }
+        .b2:visited{
+            color: #4a4a4a;
+        }
+        ul{
+            margin: 0px;
+            padding: 0px;
+        }
+        ul,.list1{
+            float: left;
+            list-style-type: none;
+        }
+        #l11{
+            margin: 0px 0px 0px 0px;
+        }
+        #l12,#l13,#l14{
+            margin: 0px 0px 0px 30px;
+        }
+        .lb1{
+            font-size:16px;
+            background-color:white;
+            font-family: sans-serif;
+            border-style: hidden;
+            position: relative;
+        }
+        
+        #hr1{
+            border: 2px solid;
+            border-color: #ecf0f9;
+            margin: -4px 0px 32px;
+        }
+        #c41{
+            width: 700px;
+            margin: auto;
+            display: flow-root;
+        }
+        #c42_1{
+            display: flow-root;
+            margin-left: 120px;
+        }
+        #c42_2{
+            display: none;
+            margin-left: 120px;
+        }
+        #c42_3{
+            display: none;
+            margin-left: 120px;
+        }
+        #c42_4{
+            display: none;
+            margin-left: 120px;
+        }
+        .csp{
+            margin: 10px;
+            padding: 20px 24px;
+            height: 310px;
+            width: 225px;
+            float: left;
+            box-shadow: 0 4px 12px rgba(207,216,220,.4);
+            border-radius: 8px;
+        }
+        .slogo{
+            float: left;
+            margin: 0px;
+        }
+        .spara{
+            clear: both;
+            float: left;
+            font: 18px;
+            line-height: 200%;
+            font-weight: 400;
+        }
+        .apara{
+            clear: left;
+            color: #73757b;
+            float: left;
+            line-height: 20px;
+            height: 100px;
+            margin: 0px;
+        }
+        .sdiv{
+            background-color: #ecf0f9;
+            float: right;
+            padding: 4px 8px;
+        }
+        .leftstat{
+            color: #73757b;
+            font-weight: 400;
+            clear: left;
+            float: left;
+        }
+        .rightstat{
+            color: black;
+            font-weight: 400;
+            float: right;
+        }
+        .starlogo{
+            float: right;
+            margin: 0px;
+        }
+        .sanch{
+            clear: both;
+            float: left;
+            padding: 10px;
+            width:90%;
+            margin:10px 0px;
+            color: #4b7abd;
+            border: 1px solid #4b7abd;
+            border-radius: 8px;
+        
+        }
+        #c5{
+            display: flow-root;
+            background-color: #2e3446;
+        }
+        #c51,#c52{
+            float: left;
+            width: 50%;
+        }
+        #c511{
+            width: 400px;
+            margin:50px;
+        }
+        .c511_h3,.c511_p{
+            font-weight: 400;
+            font-size: 20px;
+        }
+        .c511_a{
+            color: white;
+            padding: 16px;
+            border: 1px solid #4079da;
+            font-size: 20px;
+            font-weight: 300;
+            border-radius: 8px;
+            text-align:center;
+            background-color: #4079da;
+            margin-top: 20px;
+        }
+        #c52_i{
+            float: left;
+        }
+        #c6{
+            display: flow-root;
+            background-color: #2e3446;
+        }
+        #c61,#c62{
+            float: left;
+            width: 50%;
+        }
+        #c62{
+            margin-top: 100px;
+            width: 400px;
+            margin: 100px 50px 50px 150px;
+        }
+        #c61_i{
+            margin-top:100px;
+        }
+        .c511_pre{
+            margin:0px;
+        }
+        #c7{
+            display: flow-root;
+            background-color: white;
+            outline: #4079da;
+        }
+        #c71{
+            float: left;
+            width: 45%;
+            display: flow-root;
+        }
+        #c72{
+            float: left;
+            width: 55%;
+            display: flow-root;
+        }
+        .c7_p{
+            color: #7e7a7a;
+            font-size: 20px;
+        }
+        .c72_content{
+            margin: 10px;
+            padding: 24px;
+            height: 450px;
+            width: 230px;
+            float: left;
+            border:1px solid #4b7abd;
+            box-shadow: 0 4px 12px rgba(39, 115, 148, 0.4);
+            border-radius: 8px;
+            float: left;
+            position: relative;
+        }
+        #c71_div{
+            width: 70%;
+        }
+        .c7_child{
+            margin-left: 50px;
+        }
+        #c7_chi2{
+            margin-top: 100px;;
+        }
+        #c7_chi1{
+            margin-top: 300px;
+        }
+        .c7_para{
+            font-size: 14px;
+            color: #546e7a;
+            line-height: 150%;
+            margin: 0px;
+        }
+        .c7_para2{
+            clear: left;
+            float: left;
+            margin: 10px 0px 0px;
+        }
+        .staricon{
+            color:orange;
+            font-size: 16px;
+        }
+        .c7_img{
+            margin: 0px;
+            margin-top: 10px;
+            border-radius: 50%;
+        }
+        .forw{
+            right: 24px;
+            opacity: 0.7;
+            position: absolute;
+            top:250px;
+            margin:0px;
+        }
+        .backw{
+            left: 0px;
+            opacity: 0.7;
+            position: absolute;
+            top:250px;
+            margin: 0px;
+        }
+        .c7_subdiv{
+            position: absolute;
+            bottom: 24px;
+        }
+        #c73{
+            margin-top: 100px;
+            margin-bottom: 100px;
+            width:750px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #c73_h1{
+            font-size: 40px;
+        }
+        #c73_pre{
+            font-size: 20px;
+            font-family: sans-serif;
+            color: #546e7a;
+        }
+        #c7super{
+            display: flow-root;
+        }
+        #c74{
+            display: flow-root;
+        }
+        #c74super{
+            display:flow-root;
+            margin-bottom: 100px;
+        }
+        .c74chi{
+            width: 50%;
+            float: left;
+        }
+        .greent{
+            border-radius: 50%;
+        }
+        .vline{
+            border: 2px solid lightgreen;
+            width: 0px;
+            height: 45px;
+            clear: left;
+            margin-left: 12px;
+            margin-top: -3px;
+        }
+        #c74_1su{
+            margin-left: 50px;
+            margin-top: 100px;
+        }
+        #c74_1img{
+            float: left;
+            margin: 0px;
+        }
+        .texp{
+            float: left;
+            margin: 0px 0px 0px 25px;
+            font-size: 20px;
+        }
+        #c8{
+            display: flow-root;
+            background-color: #4079da;
+            width: 100%;
+        }
+        #c81{
+            float: left;
+            width: 50%;
+        }
+        #c82{
+            float: left;
+            height: 371px;
+            width: 50%;
+        }
+        #c81_i{
+            width: 100%;
+            margin: 0px;
+        }
+        
+        #c82_h2{
+            font-family: sans-serif;
+            font-weight: 400;
+            font-size: 28px;
+        }
+
+        #c82_pre{
+            font-family: sans-serif;
+            font-size: 16px;
+            line-height: 150%;
+            font-weight: 100;
+        }
+
+        #c82_pre1{
+            font-family: sans-serif;
+            font-size: 16px;
+            margin: 0px;
+        }
+        #c82_btn{
+            background-color: white;
+            color: #4079da;
+            padding: 16px;
+            border: 1px solid white;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        #c91_btn{
+            border: 1px solid #4079da;
+            background-color: #4079da;
+            padding: 16px 30px;
+            color: white;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        #c82_sub{
+            padding: 90px 64px;
+        }
+        #c9{
+            clear: left;
+            margin-top: 100px;
+        }
+        #c91{
+            width: 600px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #btndiv{
+            width: 240px;
+            height: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #c91_h1{
+            margin: 0px;
+            font-size: 40px;
+        }
+        #c10{
+            display: flex;
+            justify-content: center;
+        }
+
+        #c10_i,#c11_i{
+            float: none;
+            margin: 0px;
+        }
+        #c11{
+            display: flow-root;
+            background-color: #f3eddf;
+        }
+        #c11_1{
+            display: flex;
+            padding-top: 60px;
+            justify-content: center;
+            float: left;
+            width: 50%;
+        }
+        #c11_2{
+            display: flex;
+            float: left;
+            width: 50%;
+            padding-top: 90px;
+            justify-content: center;
+        }
+        #c11_h2{
+            font-size: 32px;
+        }
+        #c11_pre{
+            font-family: sans-serif;
+            font-size: 20px;
+            color: #7e7a7a;
+        }
+        #c11_btn{
+            display: flex;
+            width: 270px;
+            border-radius: 6px;
+            justify-content: center;
+            color: white;
+            background-color: #6b4024;
+            padding: 12px 18px 12px 24px;
+        }
+        #cfooter{
+            clear: left;
+            background-color: #2e3444;
+            display: flow-root;
+        }
+        .c12_chi{
+            width: 25%;
+            float: left;
+            display: flex;
+            color: white;
+            opacity: 0.8;
+            justify-content: center;
+            padding: 20px 0px;
+        }
+        .footp{
+            margin: 0px;
+            color: #fff;
+            opacity: 0.6;
+            font-size: 16px;
+            margin-bottom: 20px;
+            font-family: sans-serif;
+        }
+        .footp::after{
+            display: block;
+            content: "";
+            width: 24px;
+            border: 1px solid white;
+            opacity: 0.6;
+        }
+        .fooul{
+            line-height: 200%;
+            font-size: 16px;
+            font-family: sans-serif;
+        }
+        .fooli:hover{
+            text-decoration: underline;
+        }
+        #last{
+            display: flex;
+            justify-content: space-between;
+            clear: left;
+            background-color: white;
+            font-family: sans-serif;
+            color: #4a4a4a;
+            font-size: 16px;
+            padding: 12px 56px;
+        }
+        .lasta{
+            float: none;
+            font-size: 16px;
+            margin: 0px;
+            color: #4a4a4a;
+        }
+
+        #lastspan{
+            margin-right: 20px;
+        }
+        .logimg{
+            margin: 0px;
+        }
+        
+        #last_2{
+            display: flex;
+            justify-content: space-between;
+            width: 280px;
+        }
+        #last_1,#last_3{
+            display: flex;
+            align-items: center;
+        }
+        .active{
+            border:4px solid #4079da;   
+        }
+        .splspan{
+            display: block;
+            padding: 5px;
+            border-bottom: 3px solid #4079da;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div class="c1">
+        <img src="/cc-logo.svg" width="150" height="58.4">
+        <a href="/signup.html" id="na" class="g2" width="30">Sign Up</a>
+        <a href="/login.html" class="g2" id="nb">Login</a>
+        <a href="/faculty.html" class="g1">faculty</a>
+        <a href="/student.html" class="g1">Student</a>
+        </div>
+    </header>
+    <main>
+        <div class="c2">
+            <pre><h1>Start your 
+coding journey 
+today</h1></pre>
+            <pre id="p1">Learn to code from scratch with <span id="p2">job focussed 
+courses</span> designed by experts.</pre>
+        <input id="i1" type="text" placeholder="Enter email">
+        <button id="b1">  Start learning today<img id="sp2" src="/light.png" height="16"> </button>
+        <pre id="p3">or signup
+with</pre>
+        <a href="https://accounts.google.com/v3/signin/identifier?hl=en-GB&ifkv=AYZoVhewRg-uNGyGAm5o3S7fK6eiS5FmTVRLmuggayAgODgeYkeue8Udv4dAUPOstg4874VjmyzoYA&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-2097114249%3A1694258346495985&theme=glif" class="b2" id="b2b1"><img class="sp1" src="/google.png" height="15">Google</a>
+        <a href="https://github.com/login" class="b2"><img class="sp3" src="/github.png" height="15">Github</a>
+        <a href="https://www.facebook.com/" class="b2"><img class="sp3" src="/fb.png" height="15">Facebook</a>
+        </div>
+        <div class="c3">
+            <img src="/i1.png" width="433" height="229">
+            <br><br>
+        </div>
+        <div class="c4">
+            <!--flow-root means that the conatiner or root flows along with floated elements heightwise -->
+            <div id="c41">
+            <ul>
+                <li class="list1" id="l11"><button class="lb1" id="bl1" onclick="magic1()">Learn to code</button><span class="splspan" id="span1"></span></li>
+                
+                
+                <li class="list1" id="l12"><button class="lb1"  id="bl2" onclick="magic2()">Data Structures and Algorithms</button><span style="display: none;" class="splspan" id="span2"></span></li>
+                
+                <li class="list1" id="l13"><button class="lb1"  id="bl3" onclick="magic3()">Data Analytics</button><span style="display: none;" class="splspan" id="span3"></span></li>
+                
+                
+                <li class="list1" id="l14"><button class="lb1"  id="bl4" onclick="magic4()"> Web Development</button><span style="display: none;" class="splspan" id="span4"></span></li>
+                
+            </ul>
+            </div>
+            <hr id="hr1">
+            <div id="c42_1">
+                <div class="csp">
+                    <img class="slogo" src="/p1.svg">
+                    <div class="sdiv">Beginner</div>
+                    <p class="spara">Learn Python</p>
+                    <p class="apara">Get hands-on experience and master the basic syntax of Python to jumpstart your coding journey</p>
+                    <div class="leftstat">56.8K+ Learners</div>
+                    <div class="rightstat">4.6 <img class="starlogo" src="/star_9035306.png" height="15"></div>
+                    <a class="sanch" href="#101">View this course</a>
+                </div>
+                <div class="csp">
+                    <img class="slogo" src="/java.svg">
+                    <div class="sdiv">Beginner</div>
+                    <p class="spara">Learn Java</p>
+                    <p class="apara">Get hands-on experience in Java programming with this interactive and practical course</p>
+                    <div class="leftstat">56.8K+ Learners</div>
+                    <div class="rightstat">4.6 <img class="starlogo" src="/star_9035306.png" height="15"></div>
+                    <a class="sanch" href="#101">View this course</a>
+                </div>
+                <div class="csp">
+                    <img class="slogo" src="/cpp.svg">
+                    <div class="sdiv">Beginner</div>
+                    <p class="spara">Learn C++</p>
+                    <p class="apara">Join this interactive and hands-on C++ course to master the basic syntax of the language.</p>
+                    <div class="leftstat">56.8K+ Learners</div>
+                    <div class="rightstat">4.6 <img class="starlogo" src="/star_9035306.png" height="15"></div>
+                    <a class="sanch" href="#101">View this course</a>
+                </div>
+            </div>
+
+            <div id="c42_2">
+                <div class="csp">
+                    <img class="slogo" src="/p1.svg">
+                    <div class="sdiv">Intermediate</div>
+                    <p class="spara">Logic building in Python</p>
+                    <p class="apara">Learn to solve basic DSA problems using Python's easy to understand and user-friendly syntax</p>
+                    <div class="leftstat">18.1K+ Learners</div>
+                    <div class="rightstat">4.5 <img class="starlogo" src="/star_9035306.png" height="15"></div>
+                    <a class="sanch" href="#101">View this course</a>
+                </div>
+                <div class="csp">
+                    <img class="slogo" src="/java.svg">
+                    <div class="sdiv">Intermediate</div>
+                    <p class="spara">Logic building in Java</p>
+                    <p class="apara">Utilize Java's object-oriented nature for efficient problem-solving and leverage its powerful programming capabilities</p>
+                    <div class="leftstat">16.4K+ Learners</div>
+                    <div class="rightstat">4.5 <img class="starlogo" src="/star_9035306.png" height="15"></div>
+                    <a class="sanch" href="#101">View this course</a>
+                </div>
+                <div class="csp">
+                    <img class="slogo" src="/cpp.svg">
+                    <div class="sdiv">Intermediate</div>
+                    <p class="spara">Logic building in C++</p>
+                    <p class="apara">Efficiently solve computational problems with the simplicity, versatility, and extensive library support of C++</p>
+                    <div class="leftstat">14.1K+ Learners</div>
+                    <div class="rightstat">4.5 <img class="starlogo" src="/star_9035306.png" height="15"></div>
+                    <a class="sanch" href="#101">View this course</a>
+                </div>
+            </div>
+
+
+            <div id="c42_3">
+                <div class="csp">
+                    <img class="slogo" src="/sql.svg">
+                    <div class="sdiv">Beginner</div>
+                    <p class="spara">Learn SQL</p>
+                    <p class="apara">Get hands-on experience and master the basic syntax of Python to jumpstart your coding journey</p>
+                    <div class="leftstat">11.1K+ Learners</div>
+                    <div class="rightstat">4.5 <img class="starlogo" src="/star_9035306.png" height="15"></div>
+                    <a class="sanch" href="#101">View this course</a>
+                </div>
+                <div class="csp">
+                    <img class="slogo" src="/sql.svg">
+                    <div class="sdiv">Intermediate</div>
+                    <p class="spara">SQL Intermediate</p>
+                    <p class="apara">Learn advanced querying techniques like joins, sub queries and set operations to put yourself on the path to mastery in SQL</p>
+                    <div class="leftstat">2.5K+ Learners</div>
+                    <div class="rightstat">4.3 <img class="starlogo" src="/star_9035306.png" height="15"></div>
+                    <a class="sanch" href="#101">View this course</a>
+                </div>
+                <div class="csp">
+                    <img class="slogo" src="/sql.svg">
+                    <div class="sdiv">Intermediate</div>
+                    <p class="spara">SQL at Work</p>
+                    <p class="apara">Learn how to use SQL queries to analyze data in your job as business, operations or marketing analyst</p>
+                    <div class="leftstat">1.1K+ Learners</div>
+                    <div class="rightstat">4.3 <img class="starlogo" src="/star_9035306.png" height="15"></div>
+                    <a class="sanch" href="#101">View this course</a>
+                </div>
+            </div>
+
+            <div id="c42_4">
+                <div class="csp">
+                    <img class="slogo" src="/html.svg">
+                    <div class="sdiv">Beginner</div>
+                    <p class="spara">Learn HTML / CSS</p>
+                    <p class="apara">Want to get started with web development? Start with this beginners course which teaches basic HTML and CSS from scratch</p>
+                    <div class="leftstat">7.1K+ Learners</div>
+                    <div class="rightstat">4.5 <img class="starlogo" src="/star_9035306.png" height="15"></div>
+                    <a class="sanch" href="#101">View this course</a>
+                </div>
+                <div class="csp">
+                    <img class="slogo" src="/web-dev-js.svg">
+                    <div class="sdiv">Intermediate</div>
+                    <p class="spara">Web development using JavaScript</p>
+                    <p class="apara">Learn DOM events, how to handle user inputs and data structures, incorporate APIs and Sounds as you build your projects.</p>
+                    <div class="leftstat">500+ Learners</div>
+                    <div class="rightstat">4.5 <img class="starlogo" src="/star_9035306.png" height="15"></div>
+                    <a class="sanch" href="#101">View this course</a>
+                </div>
+                <div class="csp">
+                    <img class="slogo" src="/ux.svg">
+                    <div class="sdiv">Beginner</div>
+                    <p class="spara">UX for Web developers</p>
+                    <p class="apara">This course teaches web developers the basics of creating good user experiences through fundamental design principles.</p>
+                    <div class="leftstat">1.5K+ Learners</div>
+                    <div class="rightstat">4.5 <img class="starlogo" src="/star_9035306.png" height="15"></div>
+                    <a class="sanch" href="#101">View this course</a>
+                </div>
+            </div>
+            <script>
+                function magic1(){
+                    document.getElementById("c42_2").style.display="none";
+                    document.getElementById("c42_3").style.display="none";
+                    document.getElementById("c42_4").style.display="none";
+                    document.getElementById("c42_1").style.display="flow-root";
+
+                    document.getElementById("span2").style.display="none";
+                    document.getElementById("span3").style.display="none";
+                    document.getElementById("span4").style.display="none";
+
+                    document.getElementById("span1").style.display="block";
+
+                }
+
+                function magic2(){
+                    document.getElementById("c42_1").style.display="none";
+                    document.getElementById("c42_3").style.display="none";
+                    document.getElementById("c42_4").style.display="none";
+                    document.getElementById("c42_2").style.display="flow-root";
+
+                    document.getElementById("span1").style.display="none";
+                    document.getElementById("span3").style.display="none";
+                    document.getElementById("span4").style.display="none";
+
+                    document.getElementById("span2").style.display="block";
+                    
+                }
+
+                function magic3(){
+                    document.getElementById("c42_1").style.display="none";
+                    document.getElementById("c42_2").style.display="none";
+                    document.getElementById("c42_4").style.display="none";
+                    document.getElementById("c42_3").style.display="flow-root";
+
+                    document.getElementById("span1").style.display="none";
+                    document.getElementById("span2").style.display="none";
+                    document.getElementById("span4").style.display="none";
+
+                    document.getElementById("span3").style.display="block";
+                }
+
+                function magic4(){
+                    document.getElementById("c42_1").style.display="none";
+                    document.getElementById("c42_2").style.display="none";
+                    document.getElementById("c42_3").style.display="none";
+                    document.getElementById("c42_4").style.display="flow-root";
+
+                    document.getElementById("span1").style.display="none";
+                    document.getElementById("span2").style.display="none";
+                    document.getElementById("span3").style.display="none";
+
+                    document.getElementById("span4").style.display="block";
+                }
+            </script>
+        </div>
+        <div id="c5">
+            <div id="c51">
+                <div id="c511">
+                    
+                    <h3 class="c511_h3" style="color: white;">Learning Courses</h3>
+                    <h1 style="color: white;">Practical, Job relevant topics</h1>
+                    <p class="c511_p" style="color: white; font:20px;">From Python to web development, you'll master <strong style="color: white;">concepts that employers demand</strong>, ensuring your smooth transition from beginner to professional.</p>
+                    <button class="c511_a"><pre class="c511_pre">   Browse catalog   </pre></button>
+                </div>
+            </div>
+            <div id="c52">
+                <img id="c52_i" src="/practice_img.png" height="300">
+            </div>
+        </div>
+        <div id="c6">
+            <div id="c61">
+                <img id="c61_i" src="/learn_img.png" height="300">
+            </div>
+            <div id="c62">
+                <h3 class="c511_h3" style="color: white;">In Browser IDE</h3>
+                <h1 style="color: white;">Hands-on Learning Experience</h1>
+                <p class="c511_p" style="color: white; font:20px;">Practice as you learn with our <strong style="color: white;">built-in IDE.</strong> Each lesson is designed to be followed by a coding exercise to apply the concepts and gain immediate feedback.</p>
+                <button class="c511_a"><pre class="c511_pre">   Try a lesson   </pre></button>
+            </div>
+        </div>
+        <div id="c7">
+            <div id="c7super">
+            <div id="c71">
+                <div class="c7_child" id="c7_chi1">
+                <h1>Over 2M Learners</h1>
+                <div id="c71_div">
+                <p class="c7_p">Our learners benefit from our rich repository
+of courses and practice problems every day.</p>
+                </div>
+                </div>
+            </div>
+            <div id="c72">
+                <div class="c7_child" id="c7_chi2">
+                <div class="c72_content" id="c72_1">
+                <span style="color: #b3bdd2; font-size: 48px;">&#8220;</span>
+                <p class="c7_para">These are the best problems for beginners. The problems are based on basic logic and definitely, the learner who is a beginner will enjoy solving such problems and will improve day by day. The logic will improve day by day, so later he can solve high-level logic problems. I love CodeChef the most. The platform is best for practicing and learning.</p>
+                <div>
+                <span class="staricon">&#9733;</span>
+                <span class="staricon">&#9733;</span>
+                <span class="staricon">&#9733;</span>
+                <span class="staricon">&#9733;</span>
+                <span class="staricon">&#9733;</span>
+                </div>
+                <img style="display: none;" class="backw" id="backw1" src="/backward.png" height="50">
+                <img style="display: none;" class="forw" id="forw1" src="/forward.png" height="50">
+                <div class="c7_subdiv">
+                <img class="c7_img" src="/user_deafult.jpg">
+                <p class="c7_para2" style="font-size: 16px;">ayushagrawal07</p>
+                <p class="c7_para2" style="font-size: 14px;">ayushagrawal07</p>
+                <p class="c7_para2" style="font-size: 14px;">India</p>
+                </div>
+                </div>
+
+                <div class="c72_content" id="c72_2">
+                <span style="color: #b3bdd2; font-size: 48px;">&#8220;</span>
+                <p class="c7_para">This module is excellent for both learning and practicing, as it provides a clear and in-depth understanding of the concepts. It surpasses traditional learning methods by offering a deeper comprehension of the subject.</p>
+                <div>
+                <span class="staricon">&#9733;</span>
+                <span class="staricon">&#9733;</span>
+                <span class="staricon">&#9733;</span>
+                <span class="staricon">&#9733;</span>
+                <span class="staricon">&#9733;</span>
+                </div>
+                <img style="display: none;" class="backw" id="backw2" src="/backward.png" height="50" onclick="move_left2()">
+                <img class="forw" id="forw2" src="/forward.png" height="50" onclick="move_right2()">
+                <div class="c7_subdiv">
+                <img class="c7_img" src="/user_deafult.jpg" height="70">
+                <p class="c7_para2" style="font-size: 16px;">hamidkhan18</p>
+                <p class="c7_para2" style="font-size: 14px;">Mahammad Abdul Hamid Khan</p>
+                <p class="c7_para2" style="font-size: 14px;">India</p>
+                </div>
+                </div>
+
+                <div class="c72_content" id="c72_3" style="display: none;">
+                <span style="color: #b3bdd2; font-size: 48px;">&#8220;</span>
+                <p class="c7_para">CodeChef is an excellent platform that offers a wide range of practice questions and conducts exceptional contests. I am grateful to the entire the CodeChef team for their efforts and contributions.</p>
+                <div>
+                <span class="staricon">&#9733;</span>
+                <span class="staricon">&#9733;</span>
+                <span class="staricon">&#9733;</span>
+                <span class="staricon">&#9733;</span>
+                <span class="staricon">&#9733;</span>
+                </div>
+                <img style="display: none;" class="backw" id="backw3" src="/backward.png" height="50" onclick="move_left3()">
+                <img style="display: none;" class="forw" id="forw3" src="/forward.png" height="50" onclick="move_right3()">
+                <div class="c7_subdiv">
+                <img class="c7_img" src="/user_deafult.jpg" height="70">
+                <p class="c7_para2" style="font-size: 16px;">anmol_6265</p>
+                <p class="c7_para2" style="font-size: 14px;">Anmol Vishwakarma</p>
+                <p class="c7_para2" style="font-size: 14px;">India</p>
+                </div>
+                </div>
+
+                <div class="c72_content" id="c72_4" style="display: none;">
+                    <span style="color: #b3bdd2; font-size: 48px;">&#8220;</span>
+                    <p class="c7_para">I love coding, and I'm currently searching for the best website to learn from. CodeChef is absolutely awesome, and I really enjoyed using it. Being only 13 years old, I find it difficult to understand programming languages easily, but CodeChef has made learning them a breeze. I truly loved using their website. Thank you so much, CodeChef.</p>
+                    <div>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    </div>
+                    <img style="display: none;" class="backw" id="backw4" src="/backward.png" height="50" onclick="move_left4()">
+                    <img style="display: none;" class="forw" id="forw4" src="/forward.png" height="50" onclick="move_right4()">
+                    <div class="c7_subdiv">
+                    <img class="c7_img" src="/user_deafult.jpg" height="70">
+                    <p class="c7_para2" style="font-size: 16px;">dhanushree</p>
+                    <p class="c7_para2" style="font-size: 14px">dhanushree</p>                        
+                    <p class="c7_para2" style="font-size: 14px;">India</p>
+                    </div>
+                </div>
+
+                <div class="c72_content" id="c72_5" style="display: none;">
+                    <span style="color: #b3bdd2; font-size: 48px;">&#8220;</span>
+                    <p class="c7_para">These exercises are genuinely helpful. I highly recommend them to anyone who is new to Python programming or has been facing challenges while learning Python. They serve as the best source for practice and skill improvement.</p>
+                    <div>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    </div>
+                    <img style="display: none;" class="backw" id="backw5" src="/backward.png" height="50" onclick="move_left5()">
+                    <img style="display: none;" class="forw" id="forw5" src="/forward.png" height="50" onclick="move_right5()">
+                    <div class="c7_subdiv">
+                    <img class="c7_img" src="/user_deafult.jpg" height="70">
+                    <p class="c7_para2" style="font-size: 16px;">saqibyounis</p>
+                    <p class="c7_para2" style="font-size: 14px;">saqibyounis</p>
+                    <p class="c7_para2" style="font-size: 14px;">Pakistan</p>
+                    </div>
+                </div>
+
+                <div class="c72_content" id="c72_6" style="display: none;">
+                    <span style="color: #b3bdd2; font-size: 48px;">&#8220;</span>
+                    <p class="c7_para">This is a superb platform for beginners. Who has a real enthusiasm for programming? I have revised all the topics necessary for the Java language in this module. It is a very nice platform for a beginner Java user. It helps in practicing Java basic problems. It increases the progress of a beginner.</p>
+                    <div>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    </div>
+                    <img style="display: none;" class="backw" id="backw6" src="/backward.png" height="50" onclick="move_left6()">
+                    <img style="display: none;" class="forw" id="forw6" src="/forward.png" height="50" onclick="move_right6()">
+                    <div class="c7_subdiv">
+                    <img class="c7_img" src="/user_deafult.jpg" height="70">
+                    <p class="c7_para2" style="font-size: 16px;">mohinidas</p>
+                    <p class="c7_para2" style="font-size: 14px;">mohinidas</p>
+                    <p class="c7_para2" style="font-size: 14px;">India</p>
+                    </div>
+                </div>
+                
+                
+                <div class="c72_content" id="c72_7" style="display: none;">
+                    <span style="color: #b3bdd2; font-size: 48px;">&#8220;</span>
+                    <p class="c7_para">This practice question is crucial for beginner-level coders like myself. As a beginner, I recognize the importance of solving every problem, and I find the level of the problem statements to be truly excellent.</p>
+                    <div>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    </div>
+                    <img style="display: none;" class="backw" id="backw7" src="/backward.png" height="50" onclick="move_left7()">
+                    <img style="display: none;" class="forw" id="forw7" src="/forward.png" height="50" onclick="move_right7()">
+                    <div class="c7_subdiv">
+                    <img class="c7_img" src="/user_deafult.jpg" height="70">
+                    <p class="c7_para2" style="font-size: 16px;">kr_66</p>
+                    <p class="c7_para2" style="font-size: 14px;">Chavan Pranavkumar Pravin</p>
+                    <p class="c7_para2" style="font-size: 14px;">India</p>
+                    </div>
+                </div>
+                
+                <div class="c72_content" id="c72_8" style="display: none;">
+                    <span style="color: #b3bdd2; font-size: 48px;">&#8220;</span>
+                    <p class="c7_para">Hello again! In the beginning, I held the belief that Python would be challenging for someone with limited skills like myself. However, CodeChef has proven that even someone like me can learn Python effortlessly. My classes have been going exceptionally well, and I am eagerly anticipating mastering this topic</p>
+                    <div>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    </div>
+                    <img style="display: none;" class="backw" id="backw8" src="/backward.png" height="50" onclick="move_left8()">
+                    <img style="display: none;" class="forw" id="forw8" src="/forward.png" height="50" onclick="move_right8()">
+                    <div class="c7_subdiv">
+                    <img class="c7_img" src="/user_deafult.jpg" height="70">
+                    <p class="c7_para2" style="font-size: 16px;">pummy2006</p>
+                    <p class="c7_para2" style="font-size: 14px;">pummy2006</p>
+                    <p class="c7_para2" style="font-size: 14px;">India</p>
+                    </div>
+                </div>
+
+                <div class="c72_content" id="c72_9" style="display: none;">
+                    <span style="color: #b3bdd2; font-size: 48px;">&#8220;</span>
+                    <p class="c7_para">I am thankful to CodeChef for designing this type of learning method, which enables us to concentrate on specific topics and facilitates better learning.</p>
+                    <div>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    </div>
+                    <img style="display: none;" class="backw" id="backw9" src="/backward.png" height="50" onclick="move_left9()">
+                    <img style="display: none;" class="forw" id="forw9" src="/forward.png" height="50" onclick="move_right9()">
+                    <div class="c7_subdiv">
+                    <img class="c7_img" src="/user_deafult.jpg" height="70">
+                    <p class="c7_para2" style="font-size: 16px;">gauravyadav_70</p>
+                    <p class="c7_para2" style="font-size: 14px;">A047_Sachin Kumar</p>
+                    <p class="c7_para2" style="font-size: 14px;">India</p>
+                    </div>
+                </div>
+
+                <div class="c72_content" id="c72_10" style="display: none;">
+                    <span style="color: #b3bdd2; font-size: 48px;">&#8220;</span>
+                    <p class="c7_para">I absolutely love it! I recently completed my 12th grade, and initially, learning coding seemed challenging for me. However, CodeChef made it incredibly easy, as if teaching the alphabet to a nursery kid.</p>
+                    <div>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    </div>
+                    <img style="display: none;" class="backw" id="backw10" src="/backward.png" height="50" onclick="move_left10()">
+                    <img style="display: none;" class="forw" id="forw10" src="/forward.png" height="50" onclick="move_right10()">
+                    <div class="c7_subdiv">
+                    <img class="c7_img" src="/user_deafult.jpg" height="70">
+                    <p class="c7_para2" style="font-size: 16px;">kmsuru</p>
+                    <p class="c7_para2" style="font-size: 14px;">kmsuru</p>
+                    <p class="c7_para2" style="font-size: 14px;">India</p>
+                    </div>
+                </div>
+
+                <div class="c72_content" id="c72_11" style="display: none;">
+                    <span style="color: #b3bdd2; font-size: 48px;">&#8220;</span>
+                    <p class="c7_para">Thanks to CodeChef, I have been able to grasp Java concepts through their clear and methodical teaching approach. The user-friendly nature of the concepts available on the platform makes learning a seamless experience for everyone. I express my gratitude to CodeChef for their valuable contribution.</p>
+                    <div>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    </div>
+                    <img style="display: none;" class="backw" id="backw11" src="/backward.png" height="50" onclick="move_left11()">
+                    <img style="display: none;" class="forw" id="forw11" src="/forward.png" height="50" onclick="move_right11()">
+                    <div class="c7_subdiv">
+                    <img class="c7_img" src="/user_deafult.jpg" height="70">
+                    <p class="c7_para2" style="font-size: 16px;">koushikalwar12</p>
+                    <p class="c7_para2" style="font-size: 14px;">koushikalwar12</p>
+                    <p class="c7_para2" style="font-size: 14px;">India</p>
+                    </div>
+                </div>
+
+                <div class="c72_content" id="c72_12" style="display: none;">
+                    <span style="color: #b3bdd2; font-size: 48px;">&#8220;</span>
+                    <p class="c7_para">Me agrado mucho el como hacen comprender la sintaxis del lenguaje aunque no tengo mucho conocimiento por logica logrerelaconar las tareas con buen entendimiento. si fale en alguna pero logre sacar la solucion positivamente</p>
+                    <div>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    <span class="staricon">&#9733;</span>
+                    </div>
+                    <img style="display: none;" class="backw" id="backw2" src="/backward.png" height="50" onclick="move_left12()">
+                    <img style="display: none;" class="forw" id="forw2" src="/forward.png" height="50" onclick="move_right12()">
+                    <div class="c7_subdiv">
+                    <img class="c7_img" src="/user_deafult.jpg" height="70">
+                    <p class="c7_para2" style="font-size: 16px;">isra_dev13</p>
+                    <p class="c7_para2" style="font-size: 14px;">isra_dev13</p>
+                    <p class="c7_para2" style="font-size: 14px;">Mexico</p>
+                    </div>
+                </div>
+
+                <script>
+                    function move_right2(){
+                        document.getElementById("c72_1").style.display="none";
+                        document.getElementById("forw2").style.display="none";
+                        document.getElementById("backw2").style.display="block";
+
+                        document.getElementById("c72_3").style.display="block";
+                        document.getElementById("forw3").style.display="block";
+                    }
+
+                    function move_left2(){
+                        document.getElementById("c72_1").style.display="block";
+                        document.getElementById("c72_3").style.display="none";
+                        document.getElementById("backw2").style.display="none";
+                        document.getElementById("forw2").style.display="block";
+                    }
+
+                    function move_right3(){
+                        document.getElementById("c72_2").style.display="none";
+                        document.getElementById("forw3").style.display="none";
+                        document.getElementById("backw3").style.display="block";
+
+                        document.getElementById("c72_4").style.display="block";
+                        document.getElementById("forw4").style.display="block";
+                    }
+
+                    function move_left3(){
+                        document.getElementById("c72_2").style.display="block";
+                        document.getElementById("backw2").style.display="block";
+                        document.getElementById("backw3").style.display="none";
+                        document.getElementById("forw3").style.display="block";
+                        document.getElementById("c72_4").style.display="none";
+                    }
+
+                    function move_right4(){
+                        document.getElementById("c72_3").style.display="none";
+                        document.getElementById("forw4").style.display="none";
+                        document.getElementById("backw4").style.display="block";
+
+                        document.getElementById("c72_5").style.display="block";
+                        document.getElementById("forw5").style.display="block";
+                    }
+
+                    function move_left4(){
+                        document.getElementById("c72_3").style.display="block";
+                        document.getElementById("backw3").style.display="block";
+                        document.getElementById("backw4").style.display="none";
+                        document.getElementById("forw4").style.display="block";
+                        document.getElementById("c72_5").style.display="none";
+                    }
+
+                    function move_right5(){
+                        document.getElementById("c72_4").style.display="none";
+                        document.getElementById("forw5").style.display="none";
+                        document.getElementById("backw5").style.display="block";
+
+                        document.getElementById("c72_6").style.display="block";
+                        document.getElementById("forw6").style.display="block";
+                    }
+
+                    function move_left5(){
+                        document.getElementById("c72_4").style.display="block";
+                        document.getElementById("backw4").style.display="block";
+                        document.getElementById("backw5").style.display="none";
+                        document.getElementById("forw5").style.display="block";
+                        document.getElementById("c72_6").style.display="none";
+                    }
+
+                    function move_right6(){
+                        document.getElementById("c72_5").style.display="none";
+                        document.getElementById("forw6").style.display="none";
+                        document.getElementById("backw6").style.display="block";
+
+                        document.getElementById("c72_7").style.display="block";
+                        document.getElementById("forw7").style.display="block";
+                    }
+
+                    function move_left6(){
+                        document.getElementById("c72_5").style.display="block";
+                        document.getElementById("backw5").style.display="block";
+                        document.getElementById("backw6").style.display="none";
+                        document.getElementById("forw6").style.display="block";
+                        document.getElementById("c72_7").style.display="none";
+                    }
+
+                    function move_right7(){
+                        document.getElementById("c72_6").style.display="none";
+                        document.getElementById("forw7").style.display="none";
+                        document.getElementById("backw7").style.display="block";
+
+                        document.getElementById("c72_8").style.display="block";
+                        document.getElementById("forw8").style.display="block";
+                    }
+
+                    function move_left7(){
+                        document.getElementById("c72_6").style.display="block";
+                        document.getElementById("backw6").style.display="block";
+                        document.getElementById("backw7").style.display="none";
+                        document.getElementById("forw7").style.display="block";
+                        document.getElementById("c72_8").style.display="none";
+                    }
+
+                    function move_left8(){
+                        document.getElementById("c72_7").style.display="block";
+                        document.getElementById("backw7").style.display="block";
+                        document.getElementById("backw8").style.display="none";
+                        document.getElementById("forw8").style.display="block";
+                        document.getElementById("c72_9").style.display="none";
+                    }
+                    
+                    function move_left9(){
+                        document.getElementById("c72_8").style.display="block";
+                        document.getElementById("backw8").style.display="block";
+                        document.getElementById("backw9").style.display="none";
+                        document.getElementById("forw9").style.display="block";
+                        document.getElementById("c72_10").style.display="none";
+                    }
+
+                    function move_left10(){
+                        document.getElementById("c72_9").style.display="block";
+                        document.getElementById("backw9").style.display="block";
+                        document.getElementById("backw10").style.display="none";
+                        document.getElementById("forw10").style.display="block";
+                        document.getElementById("c72_11").style.display="none";
+                    }
+
+                    function move_left11(){
+                        document.getElementById("c72_10").style.display="block";
+                        document.getElementById("backw10").style.display="block";
+                        document.getElementById("backw11").style.display="none";
+                        document.getElementById("forw11").style.display="block";
+                        document.getElementById("c72_12").style.display="none";
+                    }
+
+
+                    function move_right8(){
+                        document.getElementById("c72_7").style.display="none";
+                        document.getElementById("forw8").style.display="none";
+                        document.getElementById("backw8").style.display="block";
+
+                        document.getElementById("c72_9").style.display="block";
+                        document.getElementById("forw9").style.display="block";
+                    }
+
+                    function move_right9(){
+                        document.getElementById("c72_8").style.display="none";
+                        document.getElementById("forw9").style.display="none";
+                        document.getElementById("backw9").style.display="block";
+
+                        document.getElementById("c72_10").style.display="block";
+                        document.getElementById("forw10").style.display="block";
+                    }
+
+                    function move_right10(){
+                        document.getElementById("c72_9").style.display="none";
+                        document.getElementById("forw10").style.display="none";
+                        document.getElementById("backw10").style.display="block";
+
+                        document.getElementById("c72_11").style.display="block";
+                        document.getElementById("forw11").style.display="block";
+                    }
+
+                    function move_right11(){
+                        document.getElementById("c72_10").style.display="none";
+                        document.getElementById("forw11").style.display="none";
+                        document.getElementById("backw11").style.display="block";
+
+                        document.getElementById("c72_12").style.display="block";
+                        document.getElementById("forw12").style.display="block";
+                    }
+                </script>
+                </div>
+            </div>
+            </div>
+            <div id="c73">
+                <h1 id="c73_h1" style="text-align: center;">Start from scratch, Build up expertise ✨</h1>
+                <pre id="c73_pre" style="text-align: center;">We are more than just course providers. We guide you through all
+four stages of learning and evaluation.</pre>
+            </div>
+            <div id="c74">
+                <div id="c74super">
+                <div id="c74_1" class="c74chi">
+                    <div id="c74_1su">
+                    <div>
+                        <img id="c74_1img" class="greent" src="/green1.png" height="25">
+                    </div>
+                    <div class="tex">
+                        <p class="texp">Learn from courses</p>
+                    </div>
+                    <div class="vline">
+                    </div>
+
+                    <div>
+                        <img id="c74_1img" class="greent" src="/green1.png" height="25">
+                    </div>
+                    <div class="tex">
+                        <p class="texp">Practice daily</p>
+                    </div>
+                    <div class="vline">
+                    </div>
+
+                    <div>
+                        <img id="c74_1img" class="greent" src="/green1.png" height="25">
+                    </div>
+                    <div class="tex">
+                        <p class="texp">Assess your progress</p>
+                    </div>
+                    <div class="vline">
+                    </div>
+
+                    <div>
+                        <img id="c74_1img" class="greent" src="/green1.png" height="25">
+                    </div>
+                    <div class="tex">
+                        <p class="texp">Share with the world, repeat</p>
+                    </div>
+
+                    </div>
+                </div>
+
+                <div id="c74_2" class="c74chi">
+                    <img src="/learn-animation.gif">
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="c8">
+            <div id="c81" class="c8_chi">
+                <img id="c81_i" src="/group_picture.png" height="436" width="501" >
+            </div>
+            <div id="c82" class="c8_chi">
+                    <div id="c82_sub">
+                    <h2 id="c82_h2" style="color: white;">CodeChef for colleges</h2>
+                    <pre id="c82_pre" style="color: white;">Teach industry relevant subjects like Data structures,
+Algorithms, Web development and SQL to your students.</pre>
+                    <button id="c82_btn"><pre id="c82_pre1">                 Get in touch                </pre></button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="c9">
+            <div id="c91">
+                <h1 id="c91_h1">Write your first code with us. ✨</h1>
+                <div id="btndiv">
+                <button id="c91_btn">Start learning today<img id="sp2" src="/light.png" height="16"></button>
+                </div>
+            </div>
+        </div>
+        <div id="c10">
+            <img id="c10_i" src="/learn_content_abs.png" width="800" height="365">
+        </div>
+        <div id="c11">
+            <div id="c11_1">
+                <img id="c11_i" src="/pro_illustration.svg">
+            </div>
+            <div id="c11_2">
+                <div id="c112_chi">
+                    <h2 id="c11_h2">
+                        Get CodeChef Pro
+                    </h2>
+                    <pre id="c11_pre">Build real world projects based on what you learn with 
+Pro subscription. Unlock special features
+                    </pre>
+                    <button id="c11_btn">Go Pro</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="cfooter">
+        <div id="c12_1" class="c12_chi">
+            <ul class="fooul"><p class="footp">Programming Tools</p>
+            <li class="fooli">Online IDE</li>
+            <li class="fooli">Upcoming Coding Contests</li>
+            <li class="fooli">Host Your Contest</li>
+            <li class="fooli">Problem Setting</li>
+            </ul>
+        </div>
+
+        <div id="c12_2" class="c12_chi">
+            <ul class="fooul"><p class="footp">Learning Resources</p>
+                <li class="fooli">Learning paths</li>
+                <li class="fooli">Practice Problems</li>
+                <li class="fooli">CodeChef Discuss</li>
+                <li class="fooli">FAQ'S</li>
+            </ul>
+        </div>
+
+        <div id="c12_3" class="c12_chi">
+            <ul class="fooul"><p class="footp">More</p>
+                <li class="fooli">Codechef for Business</li>
+                <li class="fooli">Contact Us</li>
+                <li class="fooli">Code of Conduct</li>
+                <li class="fooli">User Ranklist</li>
+            </ul>
+        </div>
+
+        <div id="c12_4" class="c12_chi">
+            <ul class="fooul"><p class="footp">Usage Policy</p>
+                <li class="fooli">Privacy policy</li>
+                <li class="fooli">Terms</li>
+                <li class="fooli">Other Policy</li>
+            </ul>
+        </div>
+
+        <div id="last">
+            <div id="last_3" >
+            <a class="lasta" href="#null1">www.codechef.com</a></div>
+            <div id="last_1">
+
+                <span id="lastspan">Follow Us</span>
+                
+                <div id="last_2">
+                <a class="lasta" href="#null2"><img class="logimg" src="/youtube1.png" height="28"></a>
+                
+                <a class="lasta" href="#null2"><img class="logimg" src="/telegram.png" height="28"></a>
+
+                <a class="lasta" href="#null2"><img class="logimg" src="/fbicon.png" height="28"></a>
+
+                <a class="lasta" href="#null2"><img class="logimg" src="/twitteri.png" height="28"></a>
+
+                <a class="lasta" href="#null2"><img class="logimg" src="/medium.png" height="28"></a>
+
+                <a class="lasta" href="#null2"><img class="logimg" src="/quora.png" height="28"></a>
+
+                <a class="lasta" href="#null2"><img class="logimg" src="/ln.png" height="28"></a>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
